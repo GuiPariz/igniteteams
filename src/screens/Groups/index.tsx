@@ -1,9 +1,10 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import * as S from './styles'
+import Header from '@components/Header'
 export function Groups() {
   return (
-    <View>
-      <Text>Hello World!!!</Text>
-    </View>
+    <S.Container>
+      <Header/>
+    </S.Container>
   )
 }
