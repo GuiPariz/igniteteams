@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled, { DefaultTheme } from "styled-components/native";
 import {CaretLeft} from 'phosphor-react-native'
 
 
@@ -18,4 +18,7 @@ height: 44px;
 export const BackButton = styled.TouchableOpacity`
 
 `
-
+export const BackIcon = styled(CaretLeft).attrs<{ theme: DefaultTheme }>((props: any) => ({
+    size: 36,
+    color: props.theme.COLORS.WHITE
+}))``;
