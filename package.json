@@ -13,7 +13,7 @@
     "expo": "^52.0.25",
     "expo-font": "~13.0.3",
     "expo-status-bar": "~2.0.0",
-    "phosphor-react-native": "^2.2.3",
+    "phosphor-react-native": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "0.76.5",

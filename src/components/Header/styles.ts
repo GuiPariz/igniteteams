@@ -16,6 +16,7 @@ height: 44px;
 `
 
 export const BackButton = styled.TouchableOpacity`
+flex: 1;
 
 `
 export const BackIcon = styled(CaretLeft).attrs<{ theme: DefaultTheme }>((props: any) => ({
