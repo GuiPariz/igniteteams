@@ -7,7 +7,8 @@ export const Container = styled(TouchableOpacity)`
   width: 100%;
   height: 90px;
 
-  background-color: ${(theme: DefaulTheme) => theme.COLORS.GRAY_500};
+  background-color: ${({ theme }: { theme: DefaulTheme }) =>
+    theme.COLORS.GRAY_500};
   border-radius: 6px;
 
   flex-direction: row;
@@ -18,12 +19,17 @@ export const Container = styled(TouchableOpacity)`
 `;
 
 export const Title = styled.Text`
-  font-size:${(theme: DefaulTheme) => theme.FONT_SIZE.MD}px;
-  font-family: ${(theme: DefaulTheme) => theme.FONT_FAMILY.REGULAR};
-  color: ${(theme: DefaulTheme) => theme.COLORS.GRAY_200};
-`
+  font-size: ${({ theme }: { theme: DefaulTheme }) => theme.FONT_SIZE.MD}px;
+  font-family: ${({ theme }: { theme: DefaulTheme }) =>
+    theme.FONT_FAMILY.REGULAR};
+  color: ${({ theme }: { theme: DefaulTheme }) => theme.COLORS.GRAY_200};
+`;
 
-export const Icon = styled(UsersThree).attrs<{theme: DefaultTheme}>((props: any) =>({
-  size:32,
-  color: props.theme.COLORS.GREEN_DARK,
-}))
+export const Icon = styled(UsersThree).attrs<{ theme: DefaultTheme }>(( props: any ) => ({
+    size: 36,
+    color: props.theme.COLORS.GREEN_DARK,
+    weight:'fill',
+  })
+)`
+  margin: 20px;
+`;
