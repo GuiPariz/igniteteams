@@ -1,4 +1,4 @@
-import { Groups } from '@screens/Groups'
+import { NewGroup } from '@screens/NewGroup'
 import { StatusBar } from 'react-native'
 import { ThemeProvider } from 'styled-components'
 
@@ -14,7 +14,7 @@ export default function App() {
         translucent
         backgroundColor='transparent'
       />
-       <Groups /> 
+       <NewGroup /> 
     </ThemeProvider>
   )
 }
