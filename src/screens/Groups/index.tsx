@@ -6,6 +6,7 @@ import { Highlight } from '@components/Highlight'
 import { GroupCard } from '@components/GroupCard'
 import { EmptyList } from '@components/EmptyList'
 import { FlatList } from 'react-native'
+import { Button } from '@components/Button'
 export function Groups() {
 
   const [groups, setGroups] = useState<string[]>(['Turma 1', 'Turma 2'])
@@ -24,6 +25,9 @@ export function Groups() {
         contentContainerStyle={groups.length === 0 && {flex: 1}}
         ListEmptyComponent={() => <EmptyList message='Sem turmas'/>}
       />
+
+      <Button title="Criar nova Turma"/>
+
     </S.Container>
   ) 
 }
